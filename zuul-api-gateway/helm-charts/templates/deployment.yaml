@@ -18,10 +18,10 @@ spec:
         nindent 8 }}
     spec:
       containers:
-        - name: {{ .Values.containers.name }}
-          image: {{ .Values.image.repository }}
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports: 
-            - containerPort: {{ .Values.service.targetPort }}
+      - name: {{ .Values.containers.name }}
+        image: {{ .Values.image.repository }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports: 
+        - containerPort: {{ .Values.service.targetPort }}
       affinity:
         {{- toYaml .Values.cpa | nindent 8 }}
