@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: alamsadvika/ui
+  repository: deekshithsn/ui
   pullPolicy: IfNotPresent
 
 service:

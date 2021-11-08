@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: alamsadvika/zuul 
+  repository: deekshithsn/zuul 
   pullPolicy: IfNotPresent
 
 service:
